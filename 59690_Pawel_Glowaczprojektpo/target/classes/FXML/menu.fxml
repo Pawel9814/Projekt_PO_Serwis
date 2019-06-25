@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+            prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="App" style = "-fx-background-color: #feffc9" >
+   <top>
+
+      <HBox prefHeight="20.0" prefWidth="200.0" BorderPane.alignment="CENTER" style = "-fx-background-color: #ffffe0" >
+         <children>
+            <MenuBar fx:id="appMenuBar"  layoutX="111.0" layoutY="87.0" style = "-fx-background-color: #fffae7">
+               <menus>
+                  <!--                 Pracownicy -->
+                  <Menu mnemonicParsing="false" text="Pracownicy">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Wyswietl"/>
+                        <MenuItem mnemonicParsing="false" text="Edytuj"/>
+                        <MenuItem mnemonicParsing="false" text="Dodaj"/>
+                        <MenuItem mnemonicParsing="false" text="Usun"/>
+                     </items>
+                  </Menu>
+
+                  <!--                 Klienci -->
+                  <Menu mnemonicParsing="false" text="Klienci">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Wyswietl" />
+                        <MenuItem mnemonicParsing="false" text="Edytuj" />
+                        <MenuItem mnemonicParsing="false" text="Dodaj" />
+                        <MenuItem mnemonicParsing="false" text="Usun" />
+                     </items>
+                  </Menu>
+
+                  <!--                 Zlecenia -->
+                  <Menu mnemonicParsing="false" text="Zlecenia">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Wyswietl" />
+                        <MenuItem mnemonicParsing="false" text="Edytuj" />
+                        <MenuItem mnemonicParsing="false" text="Dodaj" />
+                        <MenuItem mnemonicParsing="false" text="Usun" />
+                     </items>
+                  </Menu>
+
+                  <!--                 Szczegoly -->
+                  <Menu mnemonicParsing="false" text="Szczegoly">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Wyswietl" />
+                        <MenuItem mnemonicParsing="false" text="Edytuj" />
+                        <MenuItem mnemonicParsing="false" text="Dodaj" />
+                        <MenuItem mnemonicParsing="false" text="Usun" />
+                     </items>
+                  </Menu>
+
+                  <!--                 Podzespoly -->
+                  <Menu mnemonicParsing="false" text="Podzespoly">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Wyswietl" />
+                        <MenuItem mnemonicParsing="false" text="Edytuj" />
+                        <MenuItem mnemonicParsing="false" text="Dodaj" />
+                        <MenuItem mnemonicParsing="false" text="Usun" />
+                     </items>
+                  </Menu>
+
+                  <!--                 Dostawcy -->
+                  <Menu mnemonicParsing="false" text="Dostawcy">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Wyswietl" />
+                        <MenuItem mnemonicParsing="false" text="Edytuj" />
+                        <MenuItem mnemonicParsing="false" text="Dodaj" />
+                        <MenuItem mnemonicParsing="false" text="Usun" />
+                     </items>
+                  </Menu>
+
+                  <!--                 Siedziby -->
+                  <Menu mnemonicParsing="false" text="Siedziby">
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Wyswietl" />
+                        <MenuItem mnemonicParsing="false" text="Edytuj" />
+                        <MenuItem mnemonicParsing="false" text="Dodaj" />
+                        <MenuItem mnemonicParsing="false" text="Usun" />
+                     </items>
+                  </Menu>
+               </menus>
+            </MenuBar>
+         </children>
+      </HBox>
+   </top>
+
+   <center>
+      <TableView fx:id="resultView" layoutY="300" layoutX="200" >
+         <columns>
+         </columns>
+      </TableView>
+   </center>
+</BorderPane>
